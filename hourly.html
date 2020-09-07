@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo/aw128.png">
+    <title id="title">Search for weather updates</title>
+    <link rel="stylesheet" href="assets/css/boot.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark navbar-shadow">
+          <a class="navbar-brand" href="/">
+            <img src="assets/images/logo/aw512.png" width="35" height="35" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/history.html">History</a>
+              </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          </div>
+        </nav>
+    </header>
+    <div class="container fixed-bottom">
+        <div class="row">
+            <div id="app-update" class="col-12 d-none">
+                <div class="d-flex align-items-center justify-content-between p-2 bg-warning rounded-bottom rounded-top text-dark">
+                    <strong>
+                        <span class="ti-info-alt"></span>
+                        A new version of the app is available
+                    </strong>
+                    <button id="install-btn" class="btn btn-sm btn-dark">Install</button>
+                </div>
+            </div>
+            <div id="app-installed" class="col-12 d-none">
+                <div class="d-flex align-items-center justify-content-between p-2 bg-success rounded-bottom rounded-top text-dark">
+                    <strong>
+                        <span class="ti-thumb-up"></span>
+                        App updated successfully, reload to activate
+                    </strong>
+                    <button id="reload-btn" class="btn btn-sm btn-dark">Reload</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div id="container">
+        <!--Main Body Start o-body -->
+        <div class="row">
+            <div class="col-12" style="margin-top: 10vh;">
+
+
+                <!-- OPEN WEATHER APP MAIN BODY START -->
+
+                <div style="min-height: 90vh;">
+                    <div class="container">
+                        <div class="row">
+                            <div id="notification" class="col-12">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hourly">
+                        
+                    </div>
+                </div>
+                
+
+                <!-- OPEN WEATHER APP AMIN BODY END-->
+            </div>
+            <div class="col-12">
+                <!--Footer Start-->
+                <footer class="container-fluid o-footer">
+                    <div class="row">
+                    <div class="col-12 p-2">
+                        <div class="row ">
+                            <div class="col-md-1 d-flex justify-content-center">
+                                <a href="/index.html" class=" w-100 text-center">
+                                    <img width="40" class="img-fluid" src="assets/images/logo/aw512.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="col-md-1 d-flex align-items-center">
+                                <a class="text-decoration-none o-text-color w-100 text-center" href="/index.html">Home</a>
+                            </div>
+                            <div class="col-md-1 d-flex align-items-center">
+                                <a class="text-decoration-none o-text-color w-100 text-center" href="/history.html">History</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center border-top border-dark">
+                        Developer: <a href="https://www.linkedin.com/in/paul-otieno-software-engineer" target="_blank" class="btn-sm btn-link o-text-secondary" style="text-decoration: none;">Paul Otieno Odipo</a> <br /><span>Area Weather forecast &copy; 2020</span>
+                    </div>
+                    </div>
+                </footer>
+            </div>        
+        </div>
+    <!--Main Body End-->
+    </div>
+      
+     <script src="assets/js/rsw.js"></script>
+     <script src="assets/js/jquery.slim.min.js"></script> 
+     <script src="assets/js/popper.min.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/storage.js"></script>
+</body>
+</html>

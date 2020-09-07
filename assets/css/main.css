@@ -1,0 +1,146 @@
+/**
+* variable declarations
+*/
+.o-bg-secondary {
+  background-color: gold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a:hover {
+  color: gold;
+}
+
+html, body {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  color: #EBEBEB;
+  background-color: #141414;
+}
+
+.navbar-shadow {
+  -webkit-box-shadow: 1px 1px 4px #ffd90f;
+          box-shadow: 1px 1px 4px #ffd90f;
+}
+
+#o-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.o-footer {
+  border-top: 1px solid #998100;
+  background-color: black;
+}
+
+.o-text-color {
+  color: #EBEBEB;
+}
+
+.o-text-secondary {
+  color: gold;
+}
+
+.content-bg {
+  background-color: #292929;
+}
+
+.content-shadow {
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+}
+
+.we-hover {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.we-hover:hover {
+  cursor: pointer;
+  color: #e6c200;
+  -webkit-box-shadow: 1px 1px 4px black;
+          box-shadow: 1px 1px 4px black;
+}
+
+.icon-size {
+  font-size: xxx-large;
+}
+
+.degree-size {
+  font-size: large;
+}
+
+#home {
+  background-image: url("../images/aw_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.o-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#landing-header {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#landing-header section {
+  max-width: 60vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto auto;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid gold;
+}
+
+.card-bg {
+  background-color: #1f1f1f;
+}
+
+.o-border-bottom {
+  border-bottom: 1px solid gold;
+}
+
+.o-border {
+  border: 1px solid gold;
+}
+
+.custom-input {
+  background-color: #474747;
+  color: #ffdd29;
+}
+
+.custom-input:focus {
+  border: 1px solid #ffdd29;
+  background-color: #474747;
+  color: #ffdd29;
+  outline: none !important;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
+}
+/*# sourceMappingURL=main.css.map */
