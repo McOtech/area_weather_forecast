@@ -1,6 +1,6 @@
 
 // const staticCacheName = `forecast-static-${Date.now()}-v1`
-var staticCacheName = `forecast-static-v1`
+var staticCacheName = `forecast-static-v2`
 const staticImageCache = `forecast-static-imgs-v1`
 const allCaches = [
     staticCacheName,

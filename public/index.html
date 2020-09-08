@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="search for your destination city weather conditions and get a detailed feedback, weather forecast, area weather, openweather api, weather data, weather condition, weather, forecast, destination weather conditions, weather conditions">
+    <!-- manifest configuration start-->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Area Weather">
+    <link rel="apple-touch-icon" href="assets/images/logo/aw152.png">
+    <meta name="description" content="Search for the area weather of your desired destination">
+    <meta name="theme-color" content="#333333">
+    <!-- manifest configuration end-->
     <link rel="icon" type="image/png" href="assets/images/logo/aw128.png">
-    <title id="title">Search for weather updates</title>
-    <link rel="stylesheet" href="assets/css/boot.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Area Weather</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/boot.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
     <header>
@@ -28,10 +38,6 @@
                 <a class="nav-link" href="/history.html">History</a>
               </li>
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
           </div>
         </nav>
     </header>
@@ -55,12 +61,21 @@
                     <button id="reload-btn" class="btn btn-sm btn-dark">Reload</button>
                 </div>
             </div>
+            <div id="app-install" class="col-12 d-none">
+                <div class="d-flex align-items-center justify-content-between p-2 bg-info rounded-bottom rounded-top text-dark">
+                    <strong>
+                        <span class="ti-download"></span>
+                        Add Area Weather to Home screen
+                    </strong>
+                    <button id="install-app-btn" class="btn btn-sm btn-dark">Install</button>
+                </div>
+            </div>
         </div>
     </div>   
-    <div id="container">
+    <div id="home" class="container-fluid">
         <!--Main Body Start o-body -->
-        <div class="row">
-            <div class="col-12" style="margin-top: 10vh;">
+        <div class="row o-bg">
+            <div class="col-12 p-0" style="margin-top: 10vh;">
 
 
                 <!-- OPEN WEATHER APP MAIN BODY START -->
@@ -73,15 +88,29 @@
                             </div>
                         </div>
                     </div>
-                    <div id="daily">
-                        
+                    <div id="landing-header">
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 style="font-size: 1.5rem;">Destination Weather Forecast</h1>
+                                        <p>
+                                            <form id="weather-search" class="form-inline my-2 my-lg-0">
+                                                <input name="city" class="form-control mr-sm-2 custom-input" type="search" placeholder="Search City" aria-label="Search city">
+                                                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                                            </form>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
                 
 
                 <!-- OPEN WEATHER APP AMIN BODY END-->
             </div>
-            <div class="col-12">
+            <div class="col-12 p-0">
                 <!--Footer Start-->
                 <footer class="container-fluid o-footer">
                     <div class="row">
@@ -109,11 +138,22 @@
         </div>
     <!--Main Body End-->
     </div>
-      
      <script src="assets/js/rsw.js"></script>
+     <script src="assets/js/install.js"></script>
      <script src="assets/js/jquery.slim.min.js"></script> 
      <script src="assets/js/popper.min.js"></script>
      <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/cred.js"></script>
      <script src="assets/js/storage.js"></script>
+     
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 </body>
 </html>
